@@ -1,47 +1,64 @@
+# Notebook 2019
 
+A collection of coursework, study notes, and programming exercises from 2019, covering bioinformatics, machine learning, and statistical computing.
 
-[Toc]
+## Repository Structure
 
-## 笔记
+```
+.
+├── Notes/                          # Standalone study guides and tutorials
+│   ├── Bioinformatics_Introduction.md
+│   ├── GitHub_Usage.md
+│   └── Jupyter_Installation.md
+├── Homework/                       # University coursework assignments
+│   ├── Bioinformatics_CAU/         # Sequence alignment with BLOSUM62 scoring
+│   ├── C_CAU/                      # C programming exercises by topic
+│   ├── Python_CAU/                 # Python basics practice problems
+│   ├── Python_PKU/                 # Web crawler + word cloud project
+│   └── R_CAU/                      # R statistics lab notes
+├── Python/                         # Self-study Python projects
+│   ├── MachineLearning_Ng/         # Andrew Ng ML course notes & exercises
+│   ├── PythonCrawler_Douban/       # Douban Top250 movie data crawler
+│   └── PythonFromStatistician_Book/ # Book notes: NumPy, Pandas, Matplotlib, SciPy
+├── R/                              # Self-study R projects
+│   └── Examples_CAU/               # R programming course examples
+├── .gitignore
+├── LICENSE                         # MIT License
+└── README.md
+```
 
-### Homework
+## Homework
 
-#### 1. Bioinformatics
+| Folder | Course | Description |
+|---|---|---|
+| `Bioinformatics_CAU/` | Bioinformatics (CAU) | Python implementation of sequence alignment with BLOSUM62 scoring matrix backtracking. Includes a STAR aligner configuration file (`mapping.gtex`). |
+| `C_CAU/` | C Programming (CAU) | Basic C exercises organized by topic: input/output, sequential/loop/array structures, and functions. |
+| `Python_CAU/` | Python Basics (CAU) | Fundamentals: string manipulation, palindrome detection, Hanoi towers, prime numbers, and more. |
+| `Python_PKU/` | Python (PKU) | Web crawler fetching Sohu News articles, with Chinese word segmentation (jieba) and word cloud visualization. |
+| `R_CAU/` | R Statistics (CAU) | Lab notes covering ANOVA, multicollinearity, linear regression, cluster analysis, and ggplot2. |
 
-用 Python 实现序列比对及打分矩阵回溯，使用 blosum62 进行打分。
+## Python
 
-#### 2. C
+| Folder | Description |
+|---|---|
+| `MachineLearning_Ng/` | Notes from Andrew Ng's Machine Learning course. Covers algorithm fundamentals, mathematical derivations (with LaTeX), and Python implementations of exercises (linear/logistic regression, neural networks). |
+| `PythonCrawler_Douban/` | Jupyter notebook implementing a static web crawler using Requests + BeautifulSoup to scrape Douban Top250 movie data. |
+| `PythonFromStatistician_Book/` | Study notes from *Python: A Statistician's Perspective* by Wu Xizhi. Covers NumPy, Pandas, Matplotlib, SciPy, basic data processing, and hypothesis testing. |
 
-基础语法的练习，到函数和指针附近。
+## R
 
-#### 3. Python
+| Folder | Description |
+|---|---|
+| `Examples_CAU/` | Code examples from the *R Programming* course at CAU. Topics include dplyr, tidyr, stringr, purrr, ggplot2 (facets, colors, points, boxplots, bar charts, histograms), cowplot, rvest web scraping, GIS with leaflet, formattable, and Monty Hall simulation. |
 
-CAU：基础语法的练习；
+## Notes
 
-PKU：爬虫获取搜狐新闻的信息，并绘制词云（Word Cloud）。
+| File | Description |
+|---|---|
+| `Bioinformatics_Introduction.md` | Introduction to sequencing platforms (Illumina, Roche 454, SOLiD, PacBio, Ion), genome assembly tools (SSAKE, Edena, SOAPdenovo), and ChIP-seq data analysis. |
+| `GitHub_Usage.md` | Git and GitHub tutorial notes covering SSH setup, branching, merging, rebasing, remote operations, issues, and pull requests. |
+| `Jupyter_Installation.md` | Step-by-step Jupyter Notebook installation guide for both Windows (Anaconda) and Linux (remote server with remote access). |
 
-#### 4. R
+## License
 
-课堂笔记，包括 方差分析，多重共线性，线性回归分析，聚类分析，ggplot2的使用 等内容。
-
-
-
-### Python
-
-#### 1. Machine Learning
-
-吴恩达《机器学习》课程的笔记，主要涉及算法的基本数学知识，以及 LaTex 的公式书写。
-
-#### 2. Python Crawler
-
-尝试用 Python 爬虫获取豆瓣 Top250 的电影相关数据。
-
-#### 3. Python From Statistician
-
-吴喜之《Python: 统计人的视角》书籍的笔记，主要涉及 Numpy，Pandas，Matplotlib，SciPy 等模块的简单使用 及 简单的数据处、假设检验。
-
-### R
-
-#### 1. Examples 
-
-CAU《R语言程序设计》的记录。
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
